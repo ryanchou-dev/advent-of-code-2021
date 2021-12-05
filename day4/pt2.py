@@ -11,20 +11,20 @@ for i in range(99):
 
 def win(b1):
 	for col in range(5):
-		cnt = 0
+		seen = 0
 		for i in range(5):
 			if b1[i][col] == -1: 
-				cnt += 1
+				seen += 1
 
-		if (cnt == 5):
+		if (seen == 5):
 			return True
 	
 	for i in range(5):
-		cnt = 0
+		seen = 0
 		for j in range(5):
 			if (b1[i][j] == -1):
-				cnt += 1
-		if (cnt == 5):
+				seen += 1
+		if (seen == 5):
 			return True
 	return False
 
@@ -40,13 +40,13 @@ for i in start:
 				if b1[j][k] == i:
 					b1[j][k] = -1
 		if win(b1):
-			sume = 0
+			score = 0
 			for j in range(5):
 				for k in range(5):
 					if (b1[j][k] != -1):
-						sume += b1[j][k]
+						score += b1[j][k]
 
-			sume *= i
-			wins.append(sume)
+			score *= i
+			wins.append(score)
 
 print(wins[-1])
