@@ -13,20 +13,20 @@ for i in range(99):
 
 def win(b1):
 	for col in range(5):
-		cnt = 0
+		seen = 0
 		for i in range(5):
 			if b1[i][col] == -1: 
-				cnt += 1
+				seen += 1
 
-		if (cnt == 5):
+		if seen == 5:
 			return True
 	
 	for i in range(5):
-		cnt = 0
+		seen = 0
 		for j in range(5):
-			if (b1[i][j] == -1):
-				cnt += 1
-		if (cnt == 5):
+			if b1[i][j] == -1:
+				seen += 1
+		if seen == 5:
 			return True
 
 
@@ -41,13 +41,13 @@ for i in start:
 	for l in range(99):
 		b1 = board[l]
 		if win(b1):
-			sume = 0
+			score = 0
 			for p in range(5):
 				for m in range(5):
-					if (b1[p][m] != - 1):
-						sume += b1[p][m]
+					if b1[p][m] != - 1:
+						score += b1[p][m]
 
-			sume *= i
-			print(sume)
+			score *= i
+			print(score)
 			sys.exit()
 

@@ -22,9 +22,9 @@ def win(b1):
 	for i in range(5):
 		seen = 0
 		for j in range(5):
-			if (b1[i][j] == -1):
+			if b1[i][j] == -1:
 				seen += 1
-		if (seen == 5):
+		if seen == 5:
 			return True
 	return False
 
@@ -43,7 +43,7 @@ for i in start:
 			score = 0
 			for j in range(5):
 				for k in range(5):
-					if (b1[j][k] != -1):
+					if b1[j][k] != -1:
 						score += b1[j][k]
 
 			score *= i
