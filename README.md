@@ -1,1 +1,1 @@
-my aoc 2021 sols. some of them will be in `c++`, some in `python`, but none in `js` >:(
+#### Here are my AOC Solutions from 1-15. I'm still solving 16-25, but I feel like my solutions will be too messy to put up. If I have time later, I'll clean them up and post them! Solutions in Python and C++.
