@@ -1,1 +1,2 @@
-#### Here are my AOC Solutions from 1-15. I'm still solving 16-25, but I feel like my solutions will be too messy to put up. If I have time later, I'll clean them up and post them! Solutions in Python and C++.
+### advent of code 2021
+aoc 2021 from days 1-15. i feel like my sols are too messy for 16-25
